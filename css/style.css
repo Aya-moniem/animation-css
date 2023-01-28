@@ -1,0 +1,129 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(#1c0585,#630588);
+  height: 100vh;
+  font-family:'Times New Roman', Times, serif;
+}
+.parent{
+  background: url(../images/stars1.png);
+  height: 100vh;
+}
+.div1{
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  margin: 10px;
+  animation-name: div1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function:linear;
+}
+@keyframes div1 {
+  from{left:0%;}
+  to{left:90%;transform: rotateY(180deg);}
+}
+.div2{
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  animation-name: div2;
+  animation-duration: 3s;
+  position: absolute;
+  margin: 10px;
+  animation-delay: 3s;
+  top: 100px;
+  right: 10px;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+@keyframes div2 {
+  0%{left: 0%;}
+  100%{left:90%;}
+}
+.div3{
+  background-color: peru;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  animation-name: div3;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  position: absolute;
+  margin: 10px;
+  top:200px;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  
+}
+@keyframes div3 {
+  0%{left: 0;}
+  100%{left: 90%;transform: rotate(360deg);}
+}
+.div4{
+  background-color:peru;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  animation-name: div4;
+  animation-duration: 3s;
+  position: absolute;
+  margin: 10px;
+  animation-delay: 9s;
+  top: 300px;
+  right: 10px;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+@keyframes div4 {
+  0%{left: 0%;}
+  100%{left:90%;}
+}
+.div4:hover{
+  animation-play-state: paused;
+}
+.div5{
+  background-color:black;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  animation-name: div5;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  position: absolute;
+  margin: 10px;
+  top:400px;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes div5 {
+  0%{left: 0;}
+  100%{left: 90%;transform: rotate(360deg);}
+}
+
+.div6{
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  animation-name: div6;
+  animation-duration: 3s;
+  position: absolute;
+  margin: 10px;
+  animation-delay: 15s;
+  top: 500px;
+  right: 10px;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+@keyframes div6 {
+  0%{left: 0%;}
+  100%{left:90%;}
+}
